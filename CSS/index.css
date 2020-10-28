@@ -1,0 +1,800 @@
+:root {
+  font-size: 18px;
+  font-family: "EB Garamond", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+.homebg {
+  background-image: url("https://wallpaperaccess.com/full/335605.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profilebg {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71SDfpf8yYL._AC_SY450_.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.timelinebg {
+  /* background-image: url("https://images.assetsdelivery.com/compings_v2/sangriana/sangriana1701/sangriana170100015.jpg"); */
+  /* background-image: url("https://images.assetsdelivery.com/compings_v2/eigens/eigens1906/eigens190606579.jpg"); */
+  background-image: url("https://i.pinimg.com/originals/27/4a/98/274a9871a566cd1ac1532ef142c52f72.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #296dac;
+  color: white;
+  z-index: 1;
+}
+
+.website-name {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.website-name img {
+  width: 30px;
+}
+
+.website-name a {
+  font-family: "EB Garamond", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+
+.navbar-links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  font-family: "EB Garamond", sans-serif;
+}
+
+.navbar-link a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  transition: all 0.2s ease-in;
+}
+
+.navbar-link a:hover {
+  color: rgb(21, 21, 70);
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #296dac;
+  color: white;
+  z-index: 1;
+}
+
+.footer-text {
+  font-family: "EB Garamond", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1rem;
+  text-transform: capitalize;
+  margin-left: 2rem;
+}
+
+.specialfooter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #296dac;
+  color: white;
+  z-index: 1;
+}
+
+/* Homepage */
+
+.homepage-grid {
+  background-color: rgba(20, 20, 65, 0.548);
+  position: absolute;
+  text-align: center;
+  width: 420px;
+  height: 400px;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+button {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  color: #296dac;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 1rem;
+  cursor: pointer;
+  font-family: "EB Garamond", sans-serif;
+  font-size: 15px;
+  font-weight: none;
+  padding: 10px 5px 10px 5px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(21, 21, 70);
+  color: white;
+  text-decoration-color: white;
+}
+
+a {
+  color: inherit;
+}
+
+/* Profile Page */
+
+.profilepage-grid {
+  background-color: rgba(20, 20, 65, 0.548);
+  position: absolute;
+  text-align: center;
+  width: 420px;
+  height: 480px;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.pcolumn {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+/* Clear floats after image containers */
+.prow::after {
+  content: "";
+  clear: both;
+  display: inline-flex;
+}
+
+/* Contact Page */
+.contact-page-title {
+  padding-top: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 2rem;
+}
+.contact-container {
+  margin: auto;
+  display: flex;
+  max-width: 700px;
+  background-color: white;
+  color: #1e2145;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.send-msg {
+  color: #1e2145;
+  padding-left: 3rem;
+  width: 50%;
+}
+
+.send-msg-text {
+  text-align: center;
+}
+
+.contact-name,
+.contact-email,
+.contact-msg {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  margin-bottom: 0.5rem;
+  font-family: "EB Garamond", sans-serif;
+  background-color: white;
+}
+
+.submit-btn {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #1e2145;
+  color: white;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in;
+  font-family: "EB Garamond", sans-serif;
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: #1e2145;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 50%;
+}
+
+.mail,
+.phone,
+.email {
+  line-height: 1.5;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 120px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Fallback color */
+  background-color: transparent; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid transparent;
+  width: 40%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 6px;
+  background-color: #1e2145;
+  color: white;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 6px;
+  background-color: #1e2145;
+  color: white;
+  text-align: center;
+}
+
+/* PHONE */
+
+@media only screen and (max-width: 500px) {
+  .website-name {
+    margin-left: 2rem;
+  }
+
+  .navbar-links-icons {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .marker {
+    margin-top: -0.33rem;
+    margin-left: -0.25rem;
+    height: 1rem;
+    width: 1rem;
+    background: url(../img/map-marker-alt-solid.svg) 49% / 60% no-repeat;
+  }
+
+  .contact-page-title {
+    padding-top: 7rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+  }
+
+  .send-msg {
+    padding: 0;
+    padding-top: 1rem;
+  }
+  .contact-options {
+    font-size: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* About Us Page */
+
+.aboutus-grid {
+  background-color: rgba(20, 20, 65, 0.548);
+  text-align: center;
+  width: 420px;
+  height: 980px;
+  color: white;
+  margin: auto;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 35%;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 8px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+
+/* Timeline Page */
+
+header h1 {
+  text-align: center;
+  color: white;
+  font-weight: none;
+  margin-top: 0;
+  background-color: rgba(20, 20, 65, 0.548);
+  padding: 5px;
+}
+
+.timeline-grid {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-right: 4rem;
+}
+
+.hexa {
+  border: 0px;
+  float: left;
+  text-align: center;
+  height: 35px;
+  width: 60px;
+  font-size: 22px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.hexa:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #f0f0f0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  top: -15px;
+}
+
+.hexa:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 15px solid #f0f0f0;
+  bottom: -15px;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: " ";
+  display: block;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  background: rgb(213, 213, 213);
+  background: -moz-linear-gradient(
+    top,
+    rgba(213, 213, 213, 0) 0%,
+    rgb(213, 213, 213) 8%,
+    rgb(213, 213, 213) 92%,
+    rgba(213, 213, 213, 0) 100%
+  );
+  border-bottom: 4px solid #296dac;
+  border-bottom: 4px solid #296dac;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #296dac),
+    color-stop(100%, #296dac)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(213, 213, 213, 0) 0%,
+    rgb(213, 213, 213) 8%,
+    rgb(213, 213, 213) 92%,
+    rgba(213, 213, 213, 0) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(213, 213, 213, 0) 0%,
+    rgb(213, 213, 213) 8%,
+    rgb(213, 213, 213) 92%,
+    rgba(213, 213, 213, 0) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(213, 213, 213, 0) 0%,
+    rgb(213, 213, 213) 8%,
+    rgb(213, 213, 213) 92%,
+    rgba(213, 213, 213, 0) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(213, 213, 213, 0) 0%,
+    rgb(213, 213, 213) 8%,
+    rgb(213, 213, 213) 92%,
+    rgba(213, 213, 213, 0) 100%
+  );
+  z-index: -5;
+}
+
+.timeline li {
+  padding: 2em 0;
+}
+
+.timeline .hexa {
+  width: 16px;
+  height: 10px;
+  position: absolute;
+  background: #296dac;
+  z-index: -5;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -30px;
+  margin-top: 0;
+}
+
+.timeline .hexa:before {
+  border-bottom: 4px solid #296dac;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  top: -4px;
+}
+
+.timeline .hexa:after {
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-top: 4px solid #296dac;
+  bottom: -4px;
+}
+
+.direction-l,
+.direction-r {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.flag-wrapper {
+  text-align: center;
+  position: relative;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(8, 97, 138);
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  z-index: 15;
+  padding: 6px 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.direction-l .flag:after,
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  height: 0;
+  width: 0;
+  margin-left: -8px;
+  border: solid transparent;
+  border-bottom-color: rgb(8, 97, 138);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
+    0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15),
+    0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.time-wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 4px 0 0 0;
+  z-index: 14;
+  line-height: 1em;
+  color: #fff;
+}
+
+.direction-l .time-wrapper {
+  float: none;
+}
+
+.direction-r .time-wrapper {
+  float: none;
+}
+
+.time {
+  background: rgb(8, 97, 138);
+  display: inline-flex;
+  padding: 10px;
+  padding: 8px;
+}
+
+.desc {
+  position: relative;
+  margin: 1em 0 0 0;
+  padding: 1em;
+  background: rgb(8, 97, 138);
+  color: white;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+}
+
+.direction-l .desc,
+.direction-r .desc {
+  position: relative;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  z-index: 15;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .timeline .hexa {
+    left: -28px;
+    right: auto;
+    top: 8px;
+  }
+
+  .timeline .direction-l .hexa {
+    left: auto;
+    right: -28px;
+  }
+
+  .direction-l {
+    position: relative;
+    width: 310px;
+    float: left;
+    text-align: right;
+  }
+
+  .direction-r {
+    position: relative;
+    width: 310px;
+    float: right;
+    text-align: left;
+  }
+
+  .flag-wrapper {
+    display: inline-block;
+  }
+
+  .flag {
+    font-size: 18px;
+  }
+
+  .direction-l .flag:after {
+    left: auto;
+    right: -16px;
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgb(254, 254, 254);
+    border-width: 8px;
+  }
+
+  .direction-r .flag:after {
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgb(254, 254, 254);
+    border-width: 8px;
+    left: -8px;
+  }
+
+  .time {
+    padding: 5px 10px;
+  }
+
+  .direction-r .desc {
+    margin: 1em 0 0 0.75em;
+  }
+}
+
+@media (min-width: 992px) {
+  .timeline {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .direction-l {
+    position: relative;
+    width: 380px;
+    float: left;
+    text-align: right;
+  }
+
+  .direction-r {
+    position: relative;
+    width: 380px;
+    float: right;
+    text-align: left;
+  }
+}
